@@ -1,0 +1,190 @@
+{
+  "designSystem": {
+    "name": "Modern Portfolio Design System",
+    "version": "1.0",
+    "philosophy": "Clean, minimal, personality-driven design with strong typography hierarchy and subtle geometric elements"
+  },
+  "colorPalette": {
+    "primary": {
+      "background": "#FFFFFF",
+      "text": "#000000",
+      "accent": "#2D2D2D"
+    },
+    "neutral": {
+      "lightGray": "#F8F8F8",
+      "mediumGray": "#888888",
+      "darkGray": "#333333"
+    },
+    "usage": {
+      "background": "Pure white for clean, spacious feel",
+      "text": "High contrast black for readability",
+      "accents": "Dark grays for secondary information"
+    }
+  },
+  "typography": {
+    "hierarchy": {
+      "hero": {
+        "fontSize": "clamp(4rem, 12vw, 8rem)",
+        "fontWeight": "300-400",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "0.9",
+        "characteristics": "Massive, ultra-bold, statement typography"
+      },
+      "subtitle": {
+        "fontSize": "1.2rem",
+        "fontWeight": "400",
+        "color": "mediumGray",
+        "characteristics": "Clean, descriptive taglines with em dash prefix"
+      },
+      "navigation": {
+        "fontSize": "1rem",
+        "fontWeight": "400",
+        "characteristics": "Simple, clean navigation items"
+      },
+      "stats": {
+        "fontSize": "2.5rem",
+        "fontWeight": "300",
+        "characteristics": "Large numbers with descriptive labels below"
+      },
+      "labels": {
+        "fontSize": "0.9rem",
+        "color": "mediumGray",
+        "characteristics": "Subtle descriptive text"
+      }
+    },
+    "fontStack": "Modern sans-serif (Helvetica, Inter, or similar geometric font)",
+    "principles": [
+      "Extreme size contrast between hero and supporting text",
+      "Consistent use of light/regular weights",
+      "Generous whitespace around all text elements",
+      "Minimal color variation - mostly black with gray accents"
+    ]
+  },
+  "layout": {
+    "structure": {
+      "type": "Split-screen asymmetrical layout",
+      "leftPanel": {
+        "width": "60%",
+        "content": ["Hero text", "Statistics", "Navigation hints"],
+        "alignment": "Left-aligned with generous left margin"
+      },
+      "rightPanel": {
+        "width": "40%",
+        "content": ["Primary visual element"],
+        "alignment": "Right-aligned, full bleed"
+      }
+    },
+    "spacing": {
+      "containerPadding": "5-8% of viewport width",
+      "sectionSpacing": "8rem vertical gaps",
+      "textSpacing": "2-3rem between major text blocks"
+    },
+    "responsive": {
+      "breakpoints": ["Mobile: Stack vertically", "Tablet: Maintain split but adjust ratios", "Desktop: Full asymmetrical layout"]
+    }
+  },
+  "navigation": {
+    "style": "Minimal top navigation bar",
+    "position": "Fixed header",
+    "items": ["About Me", "Portfolio", "Services", "Blog"],
+    "cta": {
+      "text": "Book A Call",
+      "style": "Outlined button with arrow icon",
+      "position": "Right-aligned in header"
+    },
+    "logo": {
+      "type": "Simple geometric icon",
+      "style": "Minimal, possibly diamond/star shape",
+      "position": "Top-left"
+    }
+  },
+  "components": {
+    "statisticsDisplay": {
+      "layout": "Horizontal row of stat blocks",
+      "structure": {
+        "number": {
+          "style": "Large, light weight typography with + prefix",
+          "examples": ["+200", "+50"]
+        },
+        "label": {
+          "style": "Small gray text below number",
+          "examples": ["Project completed", "Startup raised"]
+        }
+      }
+    },
+    "heroSection": {
+      "composition": [
+        "Large greeting/welcome text",
+        "Personal identifier with em dash",
+        "Supporting statistics",
+        "Scroll indication"
+      ]
+    },
+    "visualElements": {
+      "imageStyle": "High-quality portrait photography",
+      "treatment": "Clean, professional, well-lit",
+      "integration": "Seamlessly integrated with layout, no heavy borders/frames"
+    }
+  },
+  "animations": {
+    "principles": [
+      "Subtle scroll-triggered animations",
+      "Smooth transitions between sections",
+      "Minimal but purposeful motion"
+    ],
+    "interactions": {
+      "scroll": "Smooth scroll indicators ('Scroll down ↓')",
+      "hover": "Gentle transitions on interactive elements",
+      "loading": "Clean, geometric loading states"
+    }
+  },
+  "designPrinciples": {
+    "whitespace": "Generous use of negative space as a design element",
+    "contrast": "High contrast typography for maximum readability",
+    "hierarchy": "Clear visual hierarchy through size, weight, and positioning",
+    "personality": "Professional yet approachable through typography choices",
+    "simplicity": "Remove everything non-essential, focus on core message",
+    "asymmetry": "Dynamic, non-grid-based layouts that feel organic"
+  },
+  "technicalGuidelines": {
+    "performance": [
+      "Optimize large typography for various screen sizes using clamp()",
+      "Ensure image optimization for fast loading",
+      "Use system fonts or fast-loading web fonts"
+    ],
+    "accessibility": [
+      "High contrast ratios for text readability",
+      "Scalable typography that works at various zoom levels",
+      "Clear focus indicators for navigation"
+    ],
+    "implementation": [
+      "CSS Grid or Flexbox for layout structure",
+      "CSS Custom Properties for consistent theming",
+      "Responsive images with proper aspect ratios"
+    ]
+  },
+  "variations": {
+    "darkMode": {
+      "background": "#0A0A0A",
+      "text": "#FFFFFF",
+      "accents": "#888888"
+    },
+    "colorAccents": {
+      "note": "Could incorporate single accent color for CTAs or highlights",
+      "suggestions": ["Electric blue", "Warm orange", "Deep green"]
+    }
+  },
+  "fileStructure": {
+    "recommended": [
+      "index.html - Main landing page",
+      "styles.css - Core design system styles",
+      "components/ - Reusable component styles",
+      "assets/ - Images and icons",
+      "js/ - Minimal interactions and animations"
+    ]
+  },
+  "inspiration": {
+    "designMovements": ["Swiss Design", "Bauhaus", "Minimal Web Design"],
+    "characteristics": ["Functional beauty", "Typography as design element", "Purposeful asymmetry"]
+  }
+}
